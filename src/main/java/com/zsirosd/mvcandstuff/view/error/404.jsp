@@ -1,0 +1,1 @@
+<h1>Generic 404 page</h1>
