@@ -32,6 +32,11 @@ public class WebConfig implements WebMvcConfigurer {
     return bean;
   }
 
+  @Override
+  public void addViewControllers(ViewControllerRegistry registry) {
+    registry.addViewController("/login").setViewName("login");
+  }
+
   @Bean
   public ViewResolver customViewResolver() {
     return new CustomViewResolver();
